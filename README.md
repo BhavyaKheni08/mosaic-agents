@@ -107,16 +107,6 @@ MOSAIC features a real-time dashboard for monitoring agent health and graph evol
 
 ---
 
-## 🗺 Roadmap
-
-- [ ] **Phase 1:** Core Memory & Graph Schemas (Completed)
-- [ ] **Phase 2:** Structured Debate Protocol (Completed)
-- [ ] **Phase 3:** LangGraph VM Orchestration (Completed)
-- [ ] **Phase 4:** Temporal Decay Implementation (Completed)
-- [ ] **Phase 5:** Multi-modal Claim Extraction (In Progress)
-- [ ] **Phase 6:** Distributed Agent Awareness (Planned)
-
----
 
 <p align="center">
   Built with ❤️ for the future of Autonomous Intelligence.
