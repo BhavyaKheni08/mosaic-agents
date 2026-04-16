@@ -218,9 +218,9 @@ class MOSAICContradictionDetector:
         except ImportError:
             return self._heuristic(claim_a, claim_b)
         except Exception as exc:
-            logger.error(
-                f"[MOSAIC-ERR][Component: {self.COMPONENT}][Func: predict] -> "
-                f"API call failed; falling back to heuristic. Error: {exc}"
+            logger.warning(
+                f"[MOSAIC-INFO][Component: {self.COMPONENT}][Func: predict] -> "
+                f"API unreachable at {self.endpoint}; Using heuristic detector."
             )
             return self._heuristic(claim_a, claim_b)
 

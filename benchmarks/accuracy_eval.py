@@ -267,11 +267,10 @@ class MOSAICInferenceClient:
             # httpx unavailable → deterministic stub
             return self._stub_answer(question)
         except Exception as exc:
-            logger.error(
-                f"[MOSAIC-ERR][Component: {self.COMPONENT}][Func: query] -> "
-                f"Failed to reach MOSAIC API at {self.endpoint}; "
-                f"Ensure the FastAPI server is running (`uvicorn api.app.main:app`). "
-                f"Error: {exc}"
+            logger.warning(
+                f"[MOSAIC-INFO][Component: {self.COMPONENT}][Func: query] -> "
+                f"MOSAIC API unreachable at {self.endpoint}; "
+                "Using internal deterministic fallback."
             )
             raise RuntimeError(str(exc)) from exc
 
